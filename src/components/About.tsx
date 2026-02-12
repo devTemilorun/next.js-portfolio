@@ -13,7 +13,7 @@ const About = () => {
         <Image src={assets.about_img} className='w-full sm:w-1/2' alt="" />
         <div className='flex flex-col items-center md:items-start text-gray-600 mt-6 lg:mt-0'>
           <h2 className="text-xl sm:text-2xl font-bold mb-2">
-            OLAWUNI ISRAEL OLUWATEMILORUN
+            Olawuni Israel Oluwatemilorun
           </h2>
           <p className="max-w-2xl text-lg leading-relaxed mb-4">
             I build <strong>modern web applications</strong> that feel effortless — blending thoughtful design with solid engineering.
@@ -21,7 +21,7 @@ const About = () => {
           <div className="grid sm:grid-cols-2 gap-8 max-w-3xl">
             <div>
               <h3 className="text-xl font-semibold mb-3">Frontend</h3>
-              <p className="font-medium text-gray-800 mb-1">React • Next.js • Tailwind CSS • JavaScript</p>
+              <p className="font-medium text-gray-800 mb-1">React • Next.js • Tailwind CSS • JavaScript • Typescript</p>
               <p className="text-gray-600">
                 Responsive, fast, accessible interfaces. Component-driven. User-first.
               </p>
