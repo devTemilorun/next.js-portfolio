@@ -32,7 +32,6 @@ const Footer = () => {
                 <Link href='/Contact' className="hover:text-white transition-colors duration-200">Contact</Link>
             </ul>
           </div>
-
           <div>
             <h4 className="text-lg font-semibold text-white mb-5">
               Get in Touch
@@ -43,33 +42,30 @@ const Footer = () => {
                   olawuniisrael2020@gmail.com
                 </a>
               </p>
-              
               <p className="text-gray-400">
                 Phone: <a href="tel:+2347041225674" className="hover:text-white transition-colors">
                   +234 7031225674
                 </a>
               </p>
-
-
               <div className="flex gap-4 mt-5">
                 <Link href="https://github.com/devTemilorun" target="_blank"
                   className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-black transition">
                   <FaGithub className="w-6 h-6" />
                 </Link>
                 <Link href="https://wa.me/2347031225674?text=Hello!%20I'm%20interested%20in%20your%20services." target="_blank"
-                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-green-500 hover:text-white transition">
+                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-black transition">
                   <FaWhatsapp className="w-6 h-6" />
                 </Link>
                 <Link href="https://twitter.com/ISCRYPT0001" target="_blank"
-                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-black hover:text-white transition">
+                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-black transition">
                   <FaXTwitter className="w-6 h-6" />
                 </Link>
                 <Link href="https://www.linkedin.com/in/olawuni-israel-oluwatemilorun-85714a324" target="_blank"
-                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-blue-500 hover:text-white transition">
+                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-black transition">
                   <FaLinkedin className="w-6 h-6" />
                 </Link>
                 <Link href="mailto:dev.temilorun@gmail.com?subject=Inquiry&body=Hello,%0A%0AI'd%20like%20to%20discuss..." target="_blank"
-                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-red-500 hover:text-white transition">
+                  className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-black transition">
                   <MdEmail className="w-6 h-6" />
                 </Link>
               </div>

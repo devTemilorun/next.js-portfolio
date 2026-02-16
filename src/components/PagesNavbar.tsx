@@ -21,7 +21,7 @@ const PagesNavbar = () => {
 
   return (
     <div className='relative top-0 left-0 w-full z-10'>
-        <nav className='bg-gray-900 container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32'>
+        <nav className='bg-gray-900 w-full flex justify-between items-center py-4 px-8 md:px-20 lg:px-32'>
             <Image src={assets.logo} width={200} height={10}  alt='logo'/>
             <ul className='hidden md:flex gap-7 text-white'>
               <Link  className='cursor-pointer hover:text-gray-400' href='/'>Home</Link>
@@ -31,6 +31,7 @@ const PagesNavbar = () => {
           </ul>
           <Image src={assets.menu_icon} onClick={()=> setShowMobileMenu(true)} className='md:hidden cursor-pointer w-7'  alt=''  />
         </nav>
+
         {/* mobile menu  */}
         <div className={`bg-white transition-all md:hidden ${showMobileMenu ?  'fixed w-full' : 'h-0 w-0'} right-0 top-0 bottom-0 overflow-hidden`}>
           <div className='flex justify-end p-6 cursor-pointer'>
