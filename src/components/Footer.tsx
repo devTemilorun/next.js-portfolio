@@ -38,8 +38,8 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               <p className="text-gray-400">
-                Email: <a href="`mailto:dev.temilorun@gmail.com?subject=Inquiry&body=Hello,%0A%0AI'd%20like%20to%20discuss..." className="hover:text-white transition-colors">
-                  olawuniisrael2020@gmail.com
+                Email: <a href="mailto:dev.temilorun@gmail.com?subject=Inquiry&body=Hello,%0A%0AI'd%20like%20to%20discuss..." className="hover:text-white transition-colors">
+                  dev.temilorun@gmail.com
                 </a>
               </p>
               <p className="text-gray-400">

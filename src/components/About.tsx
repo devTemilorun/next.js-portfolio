@@ -7,8 +7,14 @@ const About = () => {
   return (
     <div
     className='flex mx-auto p-14 md:px-20 lg:px-24 w-full overflow-hidden container flex-col items-center justify-center'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-2'>About <span className='underline underline-offset-4 decoration-1 under font-light'>Me</span></h1>
-      <p className='text-gray-500 max-w-80 text-center mb-8'>The result? Digital products that don’t just function</p>
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <h1 className="text-5xl font-light tracking-wide text-gray-900">
+          About Me
+        </h1>
+        <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+          The result? Digital products that don’t just function
+        </p>
+      </div>
       <div className='flex flex-col md:flex-row items-center md:items-start md:gap-20'>
         <Image src={assets.about_img} className='w-full sm:w-1/2' alt="" />
         <div className='flex flex-col items-center md:items-start text-gray-600 mt-6 lg:mt-0'>
@@ -38,7 +44,24 @@ const About = () => {
             Turning ideas into digital products that perform — beautifully and reliably.
           </p>
 
-            <Link href='/About' className='bg-blue-600 mt-8 text-white px-8 py-2 rounded'>About Me</Link>
+          <Link href='/About'
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-medium tracking-wide
+            bg-gradient-to-r from-indigo-500 to-blue-600
+            hover:from-indigo-600 hover:to-blue-700
+            shadow-lg hover:shadow-indigo-300/40
+            transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            <span>Know More</span>
+            <svg 
+              className="w-5 h-5" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
+
         </div>
       </div>
     </div>
