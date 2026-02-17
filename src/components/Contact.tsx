@@ -37,18 +37,19 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link href="/Contact"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-white font-medium tracking-wide
-                    bg-gradient-to-r from-indigo-500 to-blue-600
-                    hover:from-indigo-600 hover:to-blue-700
-                    shadow-lg hover:shadow-indigo-300/40
-                    transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
-                >
+                <Link
+                    href="/Contact"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl
+                    text-white font-medium tracking-wide
+                    bg-indigo-600 hover:bg-indigo-700
+                    shadow-lg transition-transform duration-200
+                    hover:-translate-y-0.5 active:translate-y-0"
+                    >
                     <span>Start a Conversation</span>
-                    <svg 
-                        className="w-5 h-5" 
-                        fill="none" 
-                        stroke="currentColor" 
+                    <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

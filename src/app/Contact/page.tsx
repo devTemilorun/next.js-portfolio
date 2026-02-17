@@ -173,10 +173,16 @@ export default function ContactPage() {
                       <p className="mt-1.5 text-sm text-red-600 dark:text-red-400">{errors.message.message}</p>
                     )}
                   </div>
+
                   <button
                     type="submit"
                     disabled={isSubmitting || submitStatus === 'loading'}
-                    className="w-full py-4 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-lg rounded-lg shadow-lg transition-all hover:scale-[1.02] disabled:opacity-60 disabled:hover:scale-100 disabled:cursor-not-allowed flex items-center justify-center gap-2.5"
+                    className="w-full py-4 px-6 rounded-lg text-white font-bold text-lg
+                    bg-indigo-600 hover:bg-indigo-700
+                    shadow-lg transition-transform duration-200
+                    hover:scale-105
+                    disabled:opacity-60 disabled:cursor-not-allowed
+                    flex items-center justify-center gap-2"
                   >
                     {submitStatus === 'loading' || isSubmitting ? (
                       'Sending...'
