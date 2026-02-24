@@ -16,7 +16,6 @@ import {
 import { FaXTwitter } from 'react-icons/fa6'
 
 import PagesNavbar from '@/src/components/PagesNavbar'
-import Footer from '@/src/components/Footer'
 
 
 const WEB3FORMS_ACCESS_KEY = 'bfb3e646-41fe-4500-bbb7-3f621a355715'
@@ -86,7 +85,7 @@ export default function ContactPage() {
   return (
     <div>
       <PagesNavbar/>
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 text-gray-900 dark:text-gray-100">
+      <div className="mt-24 min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 text-gray-900 dark:text-gray-100">
         <section className="relative pt-16 pb-16 md:pb-24 overflow-hidden">
           <div className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-100/[0.03]" />
           <div className="relative container mx-auto px-6 md:px-10 max-w-6xl">
@@ -247,10 +246,10 @@ export default function ContactPage() {
                     <a href="https://wa.me/2347031225674?text=Hello!%20I'm%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                       <FaWhatsapp/>
                     </a>
-                    <a href="https://twitter.com/ISCRYPT0001" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
+                    <a href="https://x.com/dev_Temilorun" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                       <FaXTwitter/>
                     </a>
-                    <a href="https://www.linkedin.com/in/olawuni-israel-oluwatemilorun-85714a324" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                    <a href="https://www.linkedin.com/in/olawuni-israel-oluwatemilorun-85714a324" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                       <FaLinkedin />
                     </a>
                   </div>
@@ -260,7 +259,6 @@ export default function ContactPage() {
           </div>
         </section>
       </div>
-    <Footer/>             
     </div>
   )
 }
