@@ -89,7 +89,7 @@ export default function RootLayout({
 
       <body className="antialiased min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         <NextTopLoader
-          color="#2563eb"           // blue-600
+          color="#2563eb"           
           initialPosition={0}
           crawlSpeed={200}
           height={3}

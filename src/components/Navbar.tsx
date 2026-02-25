@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { assets } from '../Assets/assets'
+import { FaBars,FaTimes } from 'react-icons/fa'
+
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -86,12 +88,12 @@ const Navbar = () => {
         </Link>
 
         {/* Mobile menu button */}
-        <Image
-          src={assets.menu_icon}
+
+        <FaBars
           onClick={() => setShowMobileMenu(true)}
-          className="md:hidden cursor-pointer w-8"
-          alt="menu"
+          className="md:hidden cursor-pointer w-8 h-8 text-white hover:text-gray-300 transition-colors duration-200"
         />
+        
       </div>
 
       {/* Mobile menu */}
@@ -108,15 +110,13 @@ const Navbar = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex justify-end p-6">
-            <Image
-              src={assets.cross_icon}
+            <FaTimes
               onClick={() => setShowMobileMenu(false)}
-              className="w-8 cursor-pointer"
-              alt="close"
+              className="md:hidden cursor-pointer w-8 h-12 text-black hover:text-gray-800 transition-colors duration-200"
             />
           </div>
 
-          <ul className="flex flex-col items-center gap-6 mt-10 px-6 text-xl font-medium text-gray-800 dark:text-gray-200">
+          <ul className="flex flex-col items-center gap-6 mt-10 px-6 text-xl font-medium text-gray-500 dark:text-gray-200">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link

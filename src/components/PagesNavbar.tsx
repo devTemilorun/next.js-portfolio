@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { assets } from '@/src/Assets/assets'
+import { FaBars,FaTimes } from 'react-icons/fa'
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -70,11 +71,10 @@ const PagesNavbar = () => {
         </ul>
 
         {/* Mobile menu button */}
-        <Image
-          src={assets.menu_icon}
+        
+        <FaBars
           onClick={() => setShowMobileMenu(true)}
-          className="md:hidden cursor-pointer w-8 invert"
-          alt="menu"
+          className="md:hidden cursor-pointer w-8 h-8 text-white hover:text-gray-300 transition-colors duration-200"
         />
       </div>
 
@@ -92,11 +92,10 @@ const PagesNavbar = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex justify-end p-6">
-            <Image
-              src={assets.cross_icon}
+
+            <FaTimes
               onClick={() => setShowMobileMenu(false)}
-              className="w-8 cursor-pointer invert"
-              alt="close"
+              className="md:hidden cursor-pointer w-8 h-8 text-white hover:text-gray-300 transition-colors duration-200"
             />
           </div>
 

@@ -13,7 +13,7 @@ type Project = {
 }
 
 const projectData: Project[] = [
-  { title: "Agency.ai", description: 'Interactive Digital Agency Landing Page with Dark/Light Mode', image: assets.project_1 },
+  { title: "Agency-ai", description: 'Interactive Digital Agency Landing Page with Dark/Light Mode', image: assets.project_1 },
   { title: "Estate", description: 'Real Estate Landing Page with Credibility Metrics', image: assets.project_2 },
   { title: "Petworld", description: 'Pet Store & Services Landing Page', image: assets.project_3 },
 ]

@@ -17,19 +17,33 @@ export default function ProjectsPage() {
         <section className="relative pt-20 pb-16 md:pb-24 overflow-hidden">
           <div className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-100/[0.03]" />
           <div className="relative container mx-auto px-6 md:px-10 max-w-6xl text-center">
+            
             <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16 md:mb-20"
+            >
+              <h1 className="text-4xl md:text-5xl font-bold tracking-wide mb-3">
+                My Projects
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light">
+                Explore my portfolio of innovative web applications and solutions.<br className="hidden sm:block" />
+                Each project showcases cutting-edge tech and user-centric design.              
+              </p>
+            </motion.div>
+            
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
             >
               <h1 className="text-5xl font-light tracking-wide text-gray-900">
-                My Projects
               </h1>
               <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-                Explore my portfolio of innovative web applications and solutions.<br className="hidden sm:block" />
-                Each project showcases cutting-edge tech and user-centric design.
+                
               </p>
-            </motion.div>
+            </motion.div> */}
           </div>
         </section> 
         <section className="pb-20 md:pb-32">
