@@ -4,6 +4,7 @@ import NextTopLoader from 'nextjs-toploader';
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://devtemilorun.netlify.app'),
   title: {
     default: 'devTemilorun | Full-Stack Web Developer',
     template: '%s | Olawuni Israel – Full-Stack Developer',
