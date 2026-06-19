@@ -2,21 +2,9 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { assets } from '../Assets/assets'
 import Image from 'next/image'
 import Link from 'next/link'
-
-type Project = {
-  title: string
-  description: string
-  image: string | any
-}
-
-const projectData: Project[] = [
-  { title: "Agency-ai", description: 'Interactive Digital Agency Landing Page with Dark/Light Mode', image: assets.project_1 },
-  { title: "Estate", description: 'Real Estate Landing Page with Credibility Metrics', image: assets.project_2 },
-  { title: "Petworld", description: 'Pet Store & Services Landing Page', image: assets.project_3 },
-]
+import { projectData } from '@/src/Assets/assets'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -56,7 +44,7 @@ const Projects = () => {
         >
           {projectData.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.slug}
               variants={itemVariants}
               className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]"
             >
@@ -80,7 +68,7 @@ const Projects = () => {
                 </p>
 
                 <Link
-                  href={`/Project/${project.title.toLowerCase().replace(/\s+/g, '-')}`} // example dynamic link — adjust as needed
+                  href={`/Project/${project.slug}`}
                   className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-medium transition-all duration-300 hover:shadow-lg"
                 >
                   View Project

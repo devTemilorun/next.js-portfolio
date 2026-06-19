@@ -37,7 +37,7 @@ const Footer = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-6xl px-6 md:px-20 lg:px-32">
+      <div className="px-6 md:px-20 lg:px-32 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24">
           <motion.div variants={itemVariants}>
             <h3 className="text-3xl font-medium text-white mb-6">
